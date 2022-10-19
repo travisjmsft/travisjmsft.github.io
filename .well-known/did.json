@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "Ed25519VerificationKey2018": "https://w3id.org/security#Ed25519VerificationKey2018",
+      "publicKeyJwk": {
+        "@id": "https://w3id.org/security#publicKeyJwk",
+        "@type": "@json"
+      }
+    }
+  ],
+  "id": "did:web:travisjmsft.github.io",
+  "verificationMethod": [
+    {
+      "id": "did:web:travisjmsft.github.io#key1",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:web:travisjmsft.github.io",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "SMIFeaCMKacd5Z4UQ8S4wadcm9nsZgtAHMlkfkFYQGk"
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:travisjmsft.github.io#key1"
+  ],
+  "assertionMethod": [
+    "did:web:travisjmsft.github.io#key1"
+  ]
+}
+
