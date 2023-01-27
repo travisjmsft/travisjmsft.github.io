@@ -1,32 +1,22 @@
 {
   "@context": [
     "https://www.w3.org/ns/did/v1",
-    {
-      "Ed25519VerificationKey2018": "https://w3id.org/security#Ed25519VerificationKey2018",
-      "publicKeyJwk": {
-        "@id": "https://w3id.org/security#publicKeyJwk",
-        "@type": "@json"
-      }
-    }
+    "https://w3id.org/security/suites/jws-2020/v1"
   ],
   "id": "did:web:travisjmsft.github.io",
-  "verificationMethod": [
+  "assertionMethod": [
     {
-      "id": "did:web:travisjmsft.github.io#key1",
-      "type": "Ed25519VerificationKey2018",
+      "id": "did:web:travisjmsft.github.io#6cae926ea1fb6f3084c7b14d993b2adf8088a251d116ac2839c2da139f144edc",
+      "type": "JsonWebKey2020",
       "controller": "did:web:travisjmsft.github.io",
       "publicKeyJwk": {
-        "kty": "OKP",
-        "crv": "Ed25519",
-        "x": "SMIFeaCMKacd5Z4UQ8S4wadcm9nsZgtAHMlkfkFYQGk"
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "YXsxPFxAPUAEn0W9o2Kkcgz2KaQwdXwBYJ-qATwvgOw=",
+        "y": "xBZdTiHJheNch6vX2RPdpCKDm9xzv2za7CBJlpOKxu4=",
+        "kid": "6cae926ea1fb6f3084c7b14d993b2adf8088a251d116ac2839c2da139f144edc",
+        "alg": "ES256"
       }
     }
-  ],
-  "authentication": [
-    "did:web:travisjmsft.github.io#key1"
-  ],
-  "assertionMethod": [
-    "did:web:travisjmsft.github.io#key1"
   ]
 }
-
